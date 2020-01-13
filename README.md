@@ -1,8 +1,13 @@
-- https://ca-lti.bbcollab.com/recording/7d9bed1a6bd24023973b86184e1cee4b
-- https://drive.google.com/open?id=1675fKVvyIZ7JhB1pSQ2qsseDttyPtdzi
+# Random Colour Generator
 
+Design an interface with a `<button>` that when clicked, will randomly set a `background-color` to the document's `<body>`. 
 
-For blackboard:
-**IMPORTANT**
-- If you are NOT part of the cohort's Slack workspace <gb-idd-18.slack.com> please write down your email address (clearly) on a sticky note and bring it over asap.
-- If you ARE part of the Slack workspace, please go to the link <gb-idd-18.slack.com> and click "Channels" on the left and join the new channel named `#w20-intr-dev-2`
+Remember there are >16M colours available on the standard RGB scale. Each colour consisting of an R, G and B in 256 different shades (0 to 255, in decimal).
+
+Break the challenge down into larger ("macro") steps first. See the file `js/index.js` for extensive notes on this problem and tips to approach getting things started.
+
+## To start
+1. Fork
+2. Clone the fork
+3. Work! (See `index.js` for tips)
+4. Bring the project to our next class as complete as possible with clearly identified macro and micro steps
