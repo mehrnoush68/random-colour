@@ -22,11 +22,13 @@ Let's start with one of the macro steps...
 //   5. Put them in the console to ensure they're not the same, refresh repeatedly
 //   6. Format the number into a string and test in the console: rgb(#, #, #)
 
-let colourRed =   Math.floor(Math.random() * 256);
-let colourGreen = Math.floor(Math.random() * 256);
-let colourBlue =  Math.floor(Math.random() * 256);
 
-console.log(`rgb(${colourRed}, ${colourGreen}, ${colourBlue})`);
+//STEP one: Randomize 3 colours (0-255)
+// let colourRed =   Math.floor(Math.random() * 256);
+// let colourGreen = Math.floor(Math.random() * 256);
+// let colourBlue =  Math.floor(Math.random() * 256);
+
+// console.log(`rgb(${colourRed}, ${colourGreen}, ${colourBlue})`);
 
 /*  Breakdown of the random number code (the right side of = assignment):
 - Math.random()
@@ -45,3 +47,44 @@ console.log(`rgb(${colourRed}, ${colourGreen}, ${colourBlue})`);
 // - Once determined, break each step down into micro steps
 // - Test each macro solution in isolation (console output helps)
 // - Begin to combine the steps together to create a final solution (test as you go!)
+
+//STEP two: Make a button clickable (and do something!)
+
+//A: Find the button
+// let randomBtn = document.querySelector('.randomize')
+//------
+//B: Assign a click listener to the button
+//C: Output a message to test
+
+// randomBtn.addEventListener('click', (event) => {
+//     console.log('Click!')
+// })
+
+//you can add (mouseenter , mouseleave, mousemove,...) to the randomBtn.addEventListener
+
+//-----------
+//STEP three: Change the background colour of the body
+// A: Find the body
+// let bodyElement = document.querySelector('body')
+
+// B: Assign a color to the backgroundColor property 
+// bodyElement.style.backgroundColor = 'tomato'
+
+
+
+
+
+
+//now we should combine all steps first combine step1, 2 and 3.
+let randomBtn = document.querySelector('.randomize')
+randomBtn.addEventListener('click', (event) => {
+    let colourRed =   Math.floor(Math.random() * 256);
+    let colourGreen = Math.floor(Math.random() * 256);
+    let colourBlue =  Math.floor(Math.random() * 256);
+
+    console.log(`rgb(${colourRed}, ${colourGreen}, ${colourBlue})`);
+
+    //assign the rgb (#,#,#) string to the background colour of the body
+    let bodyElement = document.querySelector('body')
+    bodyElement.style.backgroundColor = `rgb(${colourRed}, ${colourGreen}, ${colourBlue})`
+})
